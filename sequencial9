@@ -10,5 +10,5 @@ func main() {
 
 	var valorcomdesconto float64 = preçoproduto * 0.9
 
-	println("O valor do produto com o desconto será de:", valorcomdesconto)
+	fmt.Println("O valor do produto com o desconto será de:", valorcomdesconto)
 }
