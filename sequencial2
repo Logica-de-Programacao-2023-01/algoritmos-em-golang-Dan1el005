@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numeroint int
+
+	fmt.Print("Insira um número inteiro: ")
+	fmt.Scan(&numeroint)
+
+	var dobro int = numeroint * 2
+	var triplo int = numeroint * 3
+	var quadruplo int = numeroint * 4
+
+	println("O dobro é:", dobro)
+	println("O triplo é:", triplo)
+	println("O quadruplo é:", quadruplo)
+
+}

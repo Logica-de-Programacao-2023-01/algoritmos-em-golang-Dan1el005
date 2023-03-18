@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numero1 int
+	var numero2 int
+
+	fmt.Print("Insira o primeiro número: ")
+	fmt.Scan(&numero1)
+	fmt.Print("Insira o segundo número: ")
+	fmt.Scan(&numero2)
+
+	var soma int = numero1 + numero2
+
+	fmt.Println("O valor da soma é", soma)
+}

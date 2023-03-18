@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var peso float32
+	var altura float32
+
+	fmt.Print("Insira seu peso em KG: ")
+	fmt.Scan(&peso)
+	fmt.Print("Insira sua altura em METROS: ")
+	fmt.Scan(&altura)
+
+	var IMC float32 = peso / (altura * altura)
+
+	fmt.Println("Sua IMC é de:", IMC)
+}
