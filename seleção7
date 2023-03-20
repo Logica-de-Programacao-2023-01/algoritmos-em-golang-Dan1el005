@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+	var salário float64
+
+	fmt.Print("Insira seu salário: ")
+	fmt.Scan(&salário)
+
+	if salário < 1000 {
+		fmt.Println("O seu novo salário é de", salário*1.1)
+	} else if salário >= 1000 {
+		fmt.Println("O seu novo salário é de:", salário*1.05)
+	}
+}
