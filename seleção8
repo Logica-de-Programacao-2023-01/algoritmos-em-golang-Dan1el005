@@ -1,0 +1,29 @@
+package main
+
+import "fmt"
+
+func main() {
+	var nmrs int
+
+	fmt.Print("Insira um número de 1 a 7: ")
+	fmt.Scan(&nmrs)
+
+	if nmrs == 1 {
+		fmt.Print("Domingo")
+	} else if nmrs == 2 {
+		fmt.Print("Segunda-Feira")
+	} else if nmrs == 3 {
+		fmt.Print("Terça-Feira")
+	} else if nmrs == 4 {
+		fmt.Print("Quarta-Feira")
+	} else if nmrs == 5 {
+		fmt.Print("Quinta-feira")
+	} else if nmrs == 6 {
+		fmt.Print("Sexta-Feira")
+	} else if nmrs == 7 {
+		fmt.Print("Sábado")
+	} else if nmrs <= 0 || nmrs >= 8 {
+		fmt.Print("Esse número não corresponde a um dia da semana!")
+	}
+
+}
