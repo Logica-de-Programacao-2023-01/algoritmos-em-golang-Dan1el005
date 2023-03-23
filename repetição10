@@ -1,0 +1,28 @@
+package main
+
+import "fmt"
+
+func main() {
+    var numero, maior int
+    
+    maior = -1 << 63
+
+    for {
+        fmt.Print("Digite um número (ou 0 para sair): ")
+        fmt.Scan(&numero)
+        
+        if numero == 0 {
+            break 
+        }
+        
+        if numero > maior {
+            maior = numero 
+        }
+    }
+    
+    if maior == -1 << 63 {
+        fmt.Println("Nenhum número foi lido.")
+    } else {
+        fmt.Println("O maior número lido foi:", maior)
+    }
+}
