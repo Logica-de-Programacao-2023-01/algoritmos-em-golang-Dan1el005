@@ -1,0 +1,19 @@
+package main
+import "fmt"
+
+func main() {
+  var num int
+  var soma int = 0
+  var tamanho = 0
+  
+  for{
+      fmt.Print("Insira vários números inteiros ou 0 para fim: ")
+      fmt.Scan(&num)
+      if num == 0{
+          break
+      } 
+      soma += num
+      tamanho++
+  }
+  fmt.Println("A média aritmética é", soma/tamanho) 
+}
